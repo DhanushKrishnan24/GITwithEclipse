@@ -1,0 +1,144 @@
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ git clone ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/SecondCodeCommit
+Cloning into 'SecondCodeCommit'...
+Warning: Permanently added the RSA host key for IP address '52.94.226.180' to the list of known hosts.
+remote: Counting objects: 6, done.
+Receiving objects: 100% (6/6), 540 bytes | 28.00 KiB/s, done.
+
+dh
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ git remote -v
+origin  ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/SecondCodeCommit (fetch)
+origin  ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/SecondCodeCommit (push)
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ git add .
+warning: adding embedded git repository: SecondCodeCommit
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> SecondCodeCommit
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached SecondCodeCommit
+hint:
+hint: See "git help submodule" for more information.
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ git add .
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ git push orgin master
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ git push orgin
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ git remote -v
+origin  ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/SecondCodeCommit (fetch)
+origin  ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/SecondCodeCommit (push)
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ git push origin
+Warning: Permanently added the RSA host key for IP address '52.94.229.29' to the list of known hosts.
+To ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/SecondCodeCommit
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/SecondCodeCommit'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ ls -la
+total 13
+drwxr-xr-x 1 dhkrishn 1049089  0 Nov 23 10:47 ./
+drwxr-xr-x 1 dhkrishn 1049089  0 Nov 23 10:38 ../
+drwxr-xr-x 1 dhkrishn 1049089  0 Nov 23 10:52 .git/
+-rw-r--r-- 1 dhkrishn 1049089 73 Nov 23 10:38 Firstfile
+drwxr-xr-x 1 dhkrishn 1049089  0 Nov 23 10:47 SecondCodeCommit/
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit (master)
+$ cd SecondCodeCommit/
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit/SecondCodeCommit (master)
+$ ls -la
+total 14
+drwxr-xr-x 1 dhkrishn 1049089  0 Nov 23 10:47 ./
+drwxr-xr-x 1 dhkrishn 1049089  0 Nov 23 10:47 ../
+drwxr-xr-x 1 dhkrishn 1049089  0 Nov 23 10:52 .git/
+-rw-r--r-- 1 dhkrishn 1049089 73 Nov 23 10:47 Firstfile
+-rw-r--r-- 1 dhkrishn 1049089 34 Nov 23 10:50 Secondfile
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit/SecondCodeCommit (master)
+$ git commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   Secondfile
+
+no changes added to commit
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit/SecondCodeCommit (master)
+$ git push origin
+Everything up-to-date
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit/SecondCodeCommit (master)
+$ git add .
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit/SecondCodeCommit (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit/SecondCodeCommit (master)
+$ git commit
+Aborting commit due to empty commit message.
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit/SecondCodeCommit (master)
+$ git push origin
+Everything up-to-date
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit/SecondCodeCommit (master)
+$ git commit -m "secomd"
+[master 370a582] secomd
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+dhkrishn@LIN80015389 MINGW64 ~/Desktop/Devops Training/Code Commit/SecondCodeCommit/SecondCodeCommit (master)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 311 bytes | 103.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/SecondCodeCommit
+   905da88..370a582  master -> master
+
